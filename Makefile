@@ -1,12 +1,11 @@
-FILE = file_name_no_extension
+# Makefile for building the Fibonacci program
+all: fibonacci_program
 
-build: $(FILE).s
-	gcc -Wall -g $(FILE).s -o $(FILE) -lm -fno-pie -no-pie
+fibonacci_program: asgn8.o
+	gcc -m32 -nostdlib -o fibonacci_program asgn8.o
 
-.PHONY: db
+asgn8.o: asgn8.s
+	nasm -f elf32 asgn8.s -o asgn8.o
 
-db:
-	gdb -tui $(FILE)
-
-run:
-	./$(FILE)
+clean:
+	rm -f *.o fibonacci_program

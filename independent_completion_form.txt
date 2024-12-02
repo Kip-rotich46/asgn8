@@ -1,0 +1,9 @@
+CS330 - Computer Organization & Assembly Language
+Assignment #8: Fibonacci Sequence Program in Assembly
+
+I, [Your Name], hereby certify that this work is entirely my own. 
+I have not used any code that was not discussed or presented in the lab, 
+and I have written all the assembly code without converting C code into Assembly.
+
+[Your Signature or Typed Name]
+[Your Date]
